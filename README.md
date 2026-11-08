@@ -41,7 +41,7 @@
 ### 4. 🎨 Identidad Visual y Marca: "Summo"
 - **Concepto**: Del latín *summo / summa* (*sumatoria, totalidad y punto más alto*), integrando visualización analítica y control de flujo financiero.
 - **Activos Gráficos**:
-  - `logo.png` / `icon.png` (`512x512`): Isotipo oficial "S" entrelazado en verde esmeralda sobre fondo oscuro `#11181E`.
+  - `logo.png` / `icon.png` (`512x512`): Isotipo oficial "S+" entrelazado en verde esmeralda/turquesa 3D sobre fondo oscuro `#0D111C`.
   - `icon-192.png` (`192x192`): Ícono optimizado para instalación PWA en dispositivos móviles.
   - `brand-summo.png`: Logotipo completo con marca tipográfica oficial.
 

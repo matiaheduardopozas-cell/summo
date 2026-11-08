@@ -3,8 +3,8 @@
   "short_name": "Summo",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#11181E",
-  "theme_color": "#11181E",
+  "background_color": "#0D111C",
+  "theme_color": "#0D111C",
   "icons": [
     {
       "src": "icon-192.png",
