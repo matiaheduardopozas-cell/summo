@@ -1,10 +1,14 @@
 {
   "hosting": [
     {
-      "site": "ahorractm",
+      "site": "summo-wallet",
       "public": ".",
       "ignore": [
         "firebase.json",
+        "firestore.rules",
+        "README.md",
+        ".git/**",
+        ".firebase/**",
         "**/.*",
         "**/node_modules/**"
       ]
@@ -14,6 +18,10 @@
       "public": ".",
       "ignore": [
         "firebase.json",
+        "firestore.rules",
+        "README.md",
+        ".git/**",
+        ".firebase/**",
         "**/.*",
         "**/node_modules/**"
       ]
@@ -25,11 +33,11 @@
   "auth": {
     "providers": {
       "googleSignIn": {
-        "oAuthBrandDisplayName": "Ahorra CTM",
+        "oAuthBrandDisplayName": "Summo",
         "supportEmail": "matiaheduardopozas@gmail.com",
         "authorizedRedirectUris": [
-          "https://ahorractm.firebaseapp.com/__/auth/handler",
-          "https://ahorractm.web.app/__/auth/handler",
+          "https://summo-wallet.firebaseapp.com/__/auth/handler",
+          "https://summo-wallet.web.app/__/auth/handler",
           "https://wallet-personal-73c03.firebaseapp.com/__/auth/handler",
           "https://wallet-personal-73c03.web.app/__/auth/handler"
         ]

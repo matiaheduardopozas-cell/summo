@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="AhorraCTM">
-<meta name="theme-color" content="#141E27">
+<meta name="apple-mobile-web-app-title" content="Summo">
+<meta name="theme-color" content="#11181E">
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icon.png">
 <link rel="icon" type="image/png" href="icon.png">
-<title>Ahorra CTM — Finanzas Personales</title>
+<title>Summo — Finanzas Personales</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
@@ -402,7 +402,7 @@ body.logged-in #view-login{display:none!important}
 
 <div id="auth-loader" style="position:fixed;inset:0;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;z-index:9999;transition:opacity .25s ease;">
   <div style="width:40px;height:40px;border:3px solid var(--border-s);border-top-color:var(--primary);border-radius:50%;animation:spinLoader .8s linear infinite;"></div>
-  <div style="font-size:12px;font-weight:700;color:var(--text-m);letter-spacing:1px;text-transform:uppercase;">Cargando Ahorra CTM...</div>
+  <div style="font-size:12px;font-weight:700;color:var(--text-m);letter-spacing:1px;text-transform:uppercase;">Cargando Summo...</div>
 </div>
 
 <div id="toast" class="toast"></div>
@@ -412,9 +412,9 @@ body.logged-in #view-login{display:none!important}
 <!-- TOP BAR (MOBILE) -->
 <header id="topbar">
   <div class="tb-left">
-    <img src="logo.png" class="tb-logo-img" alt="Ahorra CTM">
+    <img src="logo.png" class="tb-logo-img" alt="Summo" width="28" height="28">
     <div class="tb-titles">
-      <span class="tb-title">Ahorra CTM</span>
+      <span class="tb-title">Summo</span>
       <span class="tb-sync"><span class="sync-dot"></span> Sincronizado</span>
     </div>
   </div>
@@ -432,9 +432,9 @@ body.logged-in #view-login{display:none!important}
   <div class="login-glow"></div>
   <div class="login-card">
     <div class="login-logo-wrap">
-      <img src="logo.png" alt="Ahorra CTM" class="login-logo-img">
+      <img src="logo.png" alt="Summo" class="login-logo-img" fetchpriority="high" width="82" height="82">
     </div>
-    <h1 class="login-title">Ahorra CTM</h1>
+    <h1 class="login-title">Summo</h1>
     <div class="login-subtitle">Wallet personal de ingresos y gastos</div>
 
     <div class="login-features">
@@ -596,9 +596,9 @@ body.logged-in #view-login{display:none!important}
 <!-- NAV -->
 <nav id="nav">
   <div class="sb-header">
-    <img src="logo.png" class="sb-logo-img" alt="Ahorra CTM">
+    <img src="logo.png" class="sb-logo-img" alt="Summo" width="36" height="36">
     <div>
-      <div class="sb-title">Ahorra CTM</div>
+      <div class="sb-title">Summo</div>
       <div class="sb-sub"><span class="sync-dot"></span> Sincronizado</div>
     </div>
   </div>
@@ -1171,7 +1171,7 @@ function exportData(){
   }, null, 2));
   const dlAnchor = document.createElement('a');
   dlAnchor.setAttribute("href", dataStr);
-  dlAnchor.setAttribute("download", `billetera_backup_${new Date().toISOString().split('T')[0]}.json`);
+  dlAnchor.setAttribute("download", `summo_backup_${new Date().toISOString().split('T')[0]}.json`);
   document.body.appendChild(dlAnchor);
   dlAnchor.click();
   dlAnchor.remove();
