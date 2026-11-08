@@ -256,6 +256,74 @@ body.logged-in #view-login{display:none!important}
 .btn-danger{background:rgba(244,63,94,0.08);border-color:rgba(244,63,94,0.3);color:var(--expense)}
 .btn-danger:hover{background:rgba(244,63,94,0.18);border-color:var(--expense)}
 
+/* DEMO BANNER & LOGIN DEMO BTN */
+.demo-btn{width:100%;margin-top:10px;display:flex;align-items:center;justify-content:center;gap:10px;padding:13px 18px;border-radius:var(--rL);border:1px solid rgba(16,185,129,0.38);background:rgba(16,185,129,0.1);color:#34D399;font-family:'Inter',sans-serif;font-size:13.5px;font-weight:700;cursor:pointer;transition:all .2s}
+.demo-btn:hover{background:rgba(16,185,129,0.18);border-color:#10B981;transform:translateY(-1px)}
+.demo-bar{display:none;align-items:center;justify-content:space-between;gap:10px;padding:8px 16px;background:linear-gradient(90deg,rgba(16,185,129,0.16),rgba(99,102,241,0.14));border-bottom:1px solid rgba(16,185,129,0.3);font-size:12px;font-weight:600;color:var(--text);z-index:95;flex-shrink:0}
+body.demo-mode .demo-bar{display:flex;height:38px}
+body.demo-mode .view{top:98px}
+.demo-bar-left{display:flex;align-items:center;gap:8px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.demo-pill{padding:2px 8px;border-radius:10px;background:rgba(16,185,129,0.22);border:1px solid rgba(16,185,129,0.45);color:#34D399;font-size:10px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;flex-shrink:0}
+.demo-actions{display:flex;gap:6px;flex-shrink:0}
+.demo-act-btn{padding:4px 10px;border-radius:8px;border:1px solid var(--border-s);background:var(--surface-el);color:var(--text);font-family:'Inter',sans-serif;font-size:11px;font-weight:700;cursor:pointer;transition:all .15s}
+.demo-act-btn:hover{border-color:var(--primary)}
+.demo-act-btn.exit{border-color:rgba(244,63,94,0.4);color:#FB7185;background:rgba(244,63,94,0.1)}
+
+/* MATH MODEL VIEW (#view-math) */
+#view-math{background:var(--bg)}
+.m-hero{padding:30px 20px 16px;display:flex;flex-direction:column;gap:12px}
+.m-hero-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.m-title{font-size:26px;font-weight:900;letter-spacing:-.7px;margin-bottom:4px}
+.m-sub{font-size:13px;color:var(--text-m);line-height:1.45}
+.m-src-toggle{display:inline-flex;background:var(--surface);border:1px solid var(--border-s);border-radius:14px;padding:3px;gap:3px}
+.m-src-btn{padding:6px 12px;border-radius:11px;border:none;background:transparent;color:var(--text-m);font-family:'Inter',sans-serif;font-size:11.5px;font-weight:700;cursor:pointer;transition:all .15s}
+.m-src-btn.active{background:var(--primary);color:var(--primary-text)}
+.m-card{margin:0 16px 16px;padding:20px;background:var(--surface);border:1px solid var(--border);border-radius:var(--rL);position:relative}
+.m-card-hdr{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+.m-badge{display:inline-flex;align-items:center;gap:6px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;padding:4px 10px;border-radius:10px;margin-bottom:6px}
+.m-badge.b-em{background:rgba(16,185,129,0.12);color:#34D399;border:1px solid rgba(16,185,129,0.3)}
+.m-badge.b-in{background:rgba(99,102,241,0.14);color:#818CF8;border:1px solid rgba(99,102,241,0.32)}
+.m-badge.b-am{background:rgba(245,158,11,0.12);color:#FBBF24;border:1px solid rgba(245,158,11,0.3)}
+.m-card-ttl{font-size:16px;font-weight:800;letter-spacing:-.2px}
+.m-card-desc{font-size:12px;color:var(--text-m);margin-top:3px;line-height:1.45}
+.m-formula-box{padding:11px 14px;border-radius:12px;background:rgba(8,13,26,0.65);border:1px solid var(--border-s);font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:12.5px;color:#6EE7B7;margin-bottom:14px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.m-formula-box .f-sub{font-family:'Inter',sans-serif;font-size:11px;color:var(--text-m);font-weight:600}
+.m-kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-bottom:14px}
+.m-kpi{padding:12px 13px;border-radius:14px;background:var(--surface-h);border:1px solid var(--border)}
+.m-kpi-lbl{font-size:11px;color:var(--text-m);font-weight:600;margin-bottom:4px}
+.m-kpi-val{font-size:17px;font-weight:900;letter-spacing:-.4px}
+.m-kpi-sub{font-size:10.5px;color:var(--text-m);margin-top:2px}
+.m-svg-wrap{width:100%;overflow:hidden;border-radius:14px;background:rgba(8,13,26,0.45);border:1px solid var(--border);padding:10px 6px 4px}
+.m-svg-wrap svg{width:100%;display:block}
+
+/* RESPONSIVE STICKY MATRIX TABLE (modern-web-guidance) */
+.m-mat-tabs{display:flex;gap:5px;flex-wrap:wrap}
+.m-mat-tab{padding:6px 11px;border-radius:10px;border:1px solid var(--border);background:transparent;color:var(--text-m);font-family:'Inter',sans-serif;font-size:11.5px;font-weight:700;cursor:pointer;transition:all .15s}
+.m-mat-tab.active{background:var(--primary);color:var(--primary-text);border-color:var(--primary)}
+.m-table-wrap{overflow:auto;max-inline-size:100%;border-radius:14px;border:1px solid var(--border-s);background:rgba(8,13,26,0.5);container-type:inline-size;outline:none}
+.m-table-wrap:focus-visible{box-shadow:0 0 0 2px var(--primary)}
+.m-table{width:100%;border-collapse:separate;border-spacing:0;font-size:12px;min-width:520px}
+.m-table caption{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+.m-table thead{position:sticky;inset-block-start:0;z-index:2}
+.m-table th,.m-table td{padding:10px 11px;text-align:right;border-bottom:1px solid var(--border);white-space:nowrap}
+.m-table thead th{background:#111B30;color:var(--text-s);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.4px}
+.m-table thead th:first-child{text-align:left;position:sticky;inset-inline-start:0;z-index:3}
+.m-table tbody th{text-align:left;font-weight:700;color:var(--text);position:sticky;inset-inline-start:0;background:#0D1628;z-index:1;border-right:1px solid var(--border)}
+.m-table tfoot th,.m-table tfoot td{background:rgba(16,185,129,0.09);font-weight:800;border-bottom:none;color:var(--text)}
+.m-table tfoot th{text-align:left;position:sticky;inset-inline-start:0;background:#0E2326;z-index:1;border-right:1px solid var(--border)}
+.m-cell-neg{color:#FB7185;font-weight:800;background:rgba(244,63,94,0.09)}
+.m-cell-pos{color:#34D399;font-weight:700}
+.m-bud-inp{width:76px;padding:4px 6px;border-radius:7px;border:1px solid var(--border-s);background:rgba(255,255,255,0.06);color:var(--text);font-family:'Inter',sans-serif;font-size:12px;font-weight:700;text-align:right;outline:none}
+.m-bud-inp:focus{border-color:var(--primary);background:rgba(99,102,241,0.14)}
+
+/* PA / PG SIMULATOR CONTROLS */
+.m-sim-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:14px}
+.m-field{display:flex;flex-direction:column;gap:5px;padding:10px 12px;border-radius:13px;background:var(--surface-h);border:1px solid var(--border)}
+.m-field label{font-size:11px;font-weight:700;color:var(--text-s);display:flex;justify-content:space-between}
+.m-field input[type="number"],.m-field input[type="range"]{width:100%;accent-color:var(--income)}
+.m-num-inp{padding:6px 8px;border-radius:8px;border:1px solid var(--border-s);background:rgba(8,13,26,0.55);color:var(--text);font-family:'Inter',sans-serif;font-size:13px;font-weight:800;outline:none}
+.m-num-inp:focus{border-color:var(--income)}
+
 /* MODAL */
 .modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.75);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);z-index:200;display:flex;align-items:flex-end;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s}
 .modal-bg.open{opacity:1;pointer-events:all}
@@ -388,6 +456,18 @@ body.logged-in #view-login{display:none!important}
   .avatar { width: 96px; height: 96px; font-size: 40px; }
   .theme-grid { grid-template-columns: repeat(4, 1fr); gap: 16px; }
   .set-sec { padding: 0 0 36px; }
+
+  #view-math { display: none; }
+  #view-math.active { display: block; }
+  .m-hero { padding: 0 0 24px; }
+  .m-grid-2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; align-items: start; margin-bottom: 20px; }
+  .m-card { margin: 0 0 20px; }
+  .m-grid-2 .m-card { margin: 0; }
+  .m-kpis { grid-template-columns: repeat(2, 1fr); }
+  .m-sim-grid { grid-template-columns: repeat(2, 1fr); }
+
+  body.demo-mode .demo-bar { position: fixed; top: 0; left: 260px; right: 0; height: 42px; padding: 0 60px; }
+  body.demo-mode .view { top: 42px; }
   
   .modal { max-width: 500px; border-radius: 28px; border: 1px solid var(--border-s); transform: translateY(20px) scale(0.95); opacity: 0; align-self: center; margin-bottom: 5vh; }
   .modal-bg.open .modal { transform: translateY(0) scale(1); opacity: 1; }
@@ -427,6 +507,17 @@ body.logged-in #view-login{display:none!important}
   </div>
 </header>
 
+<div class="demo-bar" id="demo-bar">
+  <div class="demo-bar-left">
+    <span class="demo-pill">🧪 Simulación</span>
+    <span>Datos locales de estudio ($360.000 CLP) · Sin afectar nube</span>
+  </div>
+  <div class="demo-actions">
+    <button class="demo-act-btn" onclick="resetDemoData()" title="Restaurar datos iniciales">↺ Reiniciar</button>
+    <button class="demo-act-btn exit" onclick="exitDemoMode()">✕ Salir</button>
+  </div>
+</div>
+
 <!-- LOGIN VIEW -->
 <div id="view-login">
   <div class="login-glow"></div>
@@ -440,7 +531,7 @@ body.logged-in #view-login{display:none!important}
     <div class="login-features">
       <div class="lf-item"><span class="lf-icon">🔒</span><span>Datos 100% aislados y privados</span></div>
       <div class="lf-item"><span class="lf-icon">☁️</span><span>Guardado automático en la nube</span></div>
-      <div class="lf-item"><span class="lf-icon">📊</span><span>Gráficos y análisis de gastos</span></div>
+      <div class="lf-item"><span class="lf-icon">🧮</span><span>Matrices, función lineal y metas de ahorro</span></div>
     </div>
 
     <button id="btn-google-login" class="google-btn" onclick="loginWithGoogle()">
@@ -451,6 +542,11 @@ body.logged-in #view-login{display:none!important}
         <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
       </svg>
       <span>Continuar con Google</span>
+    </button>
+
+    <button id="btn-demo-login" class="demo-btn" onclick="startDemoMode()">
+      <span>🧪</span>
+      <span>Explorar Simulación Académica (Demo)</span>
     </button>
 
     <div class="login-footer">
@@ -556,6 +652,108 @@ body.logged-in #view-login{display:none!important}
   <div style="height:24px"></div>
 </div>
 
+<!-- MATH MODEL & PROJECTIONS (#view-math) -->
+<div id="view-math" class="view">
+  <div class="m-hero">
+    <div class="m-hero-top">
+      <div>
+        <div class="m-title">Modelo Matemático</div>
+        <div class="m-sub">Álgebra matricial, función lineal de liquidez y sucesiones de ahorro</div>
+      </div>
+      <div class="m-src-toggle" id="math-src-toggle">
+        <button class="m-src-btn active" id="msrc-live" onclick="setMathSource('live')">Mis Datos</button>
+        <button class="m-src-btn" id="msrc-case" onclick="setMathSource('case')">Caso Estudio ($360k)</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 1. MATRIZ PRESUPUESTARIA CATEGORÍA x SEMANA -->
+  <div class="m-card">
+    <div class="m-card-hdr">
+      <div>
+        <div class="m-badge b-in">📐 Vectores y Matrices · M<sub>m×4</sub></div>
+        <div class="m-card-ttl">Matriz Presupuestaria Categoría × Semana</div>
+        <div class="m-card-desc">Gasto semanal estructurado en matriz M, vector total g = M · u y control de desviación D = P − M</div>
+      </div>
+      <div class="m-mat-tabs" id="m-mat-tabs">
+        <button class="m-mat-tab active" data-m="real" onclick="setMatMode('real')">Gasto Real (M)</button>
+        <button class="m-mat-tab" data-m="budget" onclick="setMatMode('budget')">Meta (P · Editable)</button>
+        <button class="m-mat-tab" data-m="dev" onclick="setMatMode('dev')">Desviación (D = P − M)</button>
+      </div>
+    </div>
+    <div class="m-formula-box" id="m-mat-formula">
+      <span>g = M · u  |  u = [1, 1, 1, 1]ᵀ</span>
+      <span class="f-sub" id="m-mat-hint">Valores dᵢⱼ &lt; 0 en D = P − M alertan sobregiro semanal</span>
+    </div>
+    <div tabindex="0" role="region" aria-labelledby="m-table-cap" class="m-table-wrap">
+      <table class="m-table" id="m-matrix-tbl">
+        <caption id="m-table-cap">Matriz presupuestaria mensual por categoría y semana</caption>
+        <thead id="m-mat-head"></thead>
+        <tbody id="m-mat-body"></tbody>
+        <tfoot id="m-mat-foot"></tfoot>
+      </table>
+    </div>
+  </div>
+
+  <div class="m-grid-2">
+    <!-- 2. FUNCIÓN LINEAL DE LIQUIDEZ -->
+    <div class="m-card">
+      <div class="m-card-hdr">
+        <div>
+          <div class="m-badge b-em">📈 Sumatorias y Función Lineal</div>
+          <div class="m-card-ttl">Proyección Lineal de Liquidez Mensual</div>
+          <div class="m-card-desc">Modelo f(t) = I₀ − ḡ·t a partir del ingreso mensual I₀ y gasto diario medio ḡ = (∑G)/t</div>
+        </div>
+      </div>
+      <div class="m-formula-box" id="m-lin-formula">
+        <span>f(t) = 360.000 − 9.500·t</span>
+        <span class="f-sub">Dominio mensual t ∈ [0, 40] días</span>
+      </div>
+      <div class="m-kpis" id="m-lin-kpis"></div>
+      <div class="m-svg-wrap">
+        <svg id="m-lin-svg" height="225"></svg>
+      </div>
+    </div>
+
+    <!-- 3. SUCESIONES ARITMÉTICAS Y GEOMÉTRICAS -->
+    <div class="m-card">
+      <div class="m-card-hdr">
+        <div>
+          <div class="m-badge b-am">🏦 Sucesiones PA vs. PG</div>
+          <div class="m-card-ttl">Simulador de Metas de Ahorro</div>
+          <div class="m-card-desc">Comparación entre Progresión Aritmética (sin interés) y Progresión + Serie Geométrica compuesta</div>
+        </div>
+      </div>
+      <div class="m-formula-box" id="m-seq-formula">
+        <span>aₙ = C₀ + n·d  |  Cₙ = C₀(1+r)ⁿ + d·[((1+r)ⁿ − 1)/r]</span>
+      </div>
+      <div class="m-sim-grid">
+        <div class="m-field">
+          <label for="sim-c0"><span>Capital inicial C₀ ($)</span></label>
+          <input id="sim-c0" class="m-num-inp" type="number" min="0" step="10000" value="50000" oninput="renderMathSeq()">
+        </div>
+        <div class="m-field">
+          <label for="sim-d"><span>Aporte mensual d ($)</span></label>
+          <input id="sim-d" class="m-num-inp" type="number" min="0" step="5000" value="40000" oninput="renderMathSeq()">
+        </div>
+        <div class="m-field">
+          <label for="sim-r"><span>Tasa mensual r (%)</span><span id="sim-r-lbl">0,8%</span></label>
+          <input id="sim-r" class="m-num-inp" type="number" min="0.1" max="5" step="0.1" value="0.8" oninput="renderMathSeq()">
+        </div>
+        <div class="m-field">
+          <label for="sim-n"><span>Plazo n (meses)</span><span id="sim-n-lbl">12 m</span></label>
+          <input id="sim-n" type="range" min="3" max="36" step="1" value="12" oninput="renderMathSeq()">
+        </div>
+      </div>
+      <div class="m-kpis" id="m-seq-kpis"></div>
+      <div class="m-svg-wrap">
+        <svg id="m-seq-svg" height="225"></svg>
+      </div>
+    </div>
+  </div>
+  <div style="height:24px"></div>
+</div>
+
 <!-- SETTINGS -->
 <div id="view-settings" class="view">
   <div class="set-hero">
@@ -608,6 +806,9 @@ body.logged-in #view-login{display:none!important}
   </button>
   <button class="nav-btn" id="nav-analytics" onclick="gotoView('analytics')">
     <div class="nav-pill"></div><span class="nav-icon">📊</span><span class="nav-label">Análisis</span>
+  </button>
+  <button class="nav-btn" id="nav-math" onclick="gotoView('math')">
+    <div class="nav-pill"></div><span class="nav-icon">🧮</span><span class="nav-label">Modelo</span>
   </button>
   <button class="nav-btn" id="nav-settings" onclick="gotoView('settings')">
     <div class="nav-pill"></div><span class="nav-icon">⚙️</span><span class="nav-label">Config.</span>
@@ -745,12 +946,94 @@ provider.setCustomParameters({ prompt: 'select_account' });
 
 // ═══════════════ APP STATE ═══════════════
 let currentUser = null;
+let isDemoMode = false;
 let userRef = null, txsRef = null;
 let userUnsub = null, txsUnsub = null;
 
-let txs=[], cats=DEFAULT_CATS, theme='night';
+let txs=[], cats=[...DEFAULT_CATS], theme='night';
 let curView='home', chartPeriod='month', anPeriod='month';
+let mathSource='live', matMode='real';
+let customBudgets={
+  food:[30000,30000,30000,30000],
+  transport:[15000,15000,15000,15000],
+  services_edu:[16000,16000,16000,16000],
+  other_exp:[10000,10000,10000,10000]
+};
 let ms={type:'expense',amt:'',catId:'',pay:'cash',note:'',date:'',editId:null};
+
+function buildDemoTransactions(){
+  const nowMs = Date.now();
+  const dAgo = (days) => new Date(nowMs - days * 86400000 - 3600000).toISOString();
+  return [
+    {id:'d0', type:'income', amount:360000, catId:'salary', pay:'card', date:dAgo(27), note:'Beca + ingreso mensual part-time'},
+    // Semana 1 ($80.000)
+    {id:'d1', type:'expense', amount:18500, catId:'food', pay:'card', date:dAgo(26), note:'Compra supermercado semana 1'},
+    {id:'d2', type:'expense', amount:14000, catId:'transport', pay:'card', date:dAgo(25), note:'Carga tarjeta Bip! estudiante'},
+    {id:'d3', type:'expense', amount:22000, catId:'services', pay:'card', date:dAgo(24), note:'Plan móvil e impresiones'},
+    {id:'d4', type:'expense', amount:13500, catId:'food', pay:'cash', date:dAgo(23), note:'Colaciones sede INACAP'},
+    {id:'d5', type:'expense', amount:12000, catId:'entertainment', pay:'card', date:dAgo(22), note:'Cine y café fin de semana'},
+    // Semana 2 ($60.000)
+    {id:'d6', type:'expense', amount:28500, catId:'food', pay:'card', date:dAgo(19), note:'Almuerzos y mercadería sem. 2'},
+    {id:'d7', type:'expense', amount:14000, catId:'transport', pay:'card', date:dAgo(18), note:'Carga Bip! semana 2'},
+    {id:'d8', type:'expense', amount:8000, catId:'education', pay:'cash', date:dAgo(16), note:'Materiales estudio y guías'},
+    {id:'d9', type:'expense', amount:9500, catId:'entertainment', pay:'card', date:dAgo(15), note:'Streaming + snack'},
+    // Semana 3 ($72.000)
+    {id:'d10', type:'expense', amount:34000, catId:'food', pay:'card', date:dAgo(12), note:'Supermercado y cafetería sem. 3'},
+    {id:'d11', type:'expense', amount:15500, catId:'transport', pay:'cash', date:dAgo(11), note:'Carga Bip! + colectivo'},
+    {id:'d12', type:'expense', amount:12000, catId:'services', pay:'card', date:dAgo(9), note:'Aporte internet hogar'},
+    {id:'d13', type:'expense', amount:10500, catId:'entertainment', pay:'cash', date:dAgo(8), note:'Salida con compañeros'},
+    // Semana 4 ($73.000)
+    {id:'d14', type:'expense', amount:31500, catId:'food', pay:'card', date:dAgo(5), note:'Alimentación semana 4'},
+    {id:'d15', type:'expense', amount:14500, catId:'transport', pay:'card', date:dAgo(4), note:'Carga Bip! semana 4'},
+    {id:'d16', type:'expense', amount:19000, catId:'education', pay:'card', date:dAgo(2), note:'Libro técnico / licencia'},
+    {id:'d17', type:'expense', amount:8000, catId:'entertainment', pay:'cash', date:dAgo(1), note:'Gastos hormiga varios'}
+  ];
+}
+
+function startDemoMode(initialView='home', silent=false){
+  isDemoMode = true;
+  mathSource = 'live';
+  cats = [...DEFAULT_CATS];
+  txs = buildDemoTransactions();
+  document.body.classList.remove('not-logged-in');
+  document.body.classList.add('logged-in', 'demo-mode');
+  updateUserUI({ displayName: 'Estudiante Demo ABPro', email: 'simulacion@inacapmail.cl', photoURL: '' });
+  const mToggle = document.getElementById('math-src-toggle');
+  if (mToggle) mToggle.style.display = 'none';
+  gotoView(initialView);
+  if (!silent) showToast('Modo Simulación Académica activado', 'success');
+}
+
+function resetDemoData(){
+  if (!isDemoMode) return;
+  txs = buildDemoTransactions();
+  customBudgets={
+    food:[30000,30000,30000,30000],
+    transport:[15000,15000,15000,15000],
+    services_edu:[16000,16000,16000,16000],
+    other_exp:[10000,10000,10000,10000]
+  };
+  renderHome();
+  if(curView==='analytics') renderAnalytics();
+  if(curView==='math') renderMathModel();
+  showToast('Datos de simulación restaurados ($360.000 CLP)', 'info');
+}
+
+function exitDemoMode(){
+  isDemoMode = false;
+  document.body.classList.remove('demo-mode');
+  const mToggle = document.getElementById('math-src-toggle');
+  if (mToggle) mToggle.style.display = 'inline-flex';
+  if (currentUser) {
+    updateUserUI(currentUser);
+    loadUserData();
+    gotoView('home');
+  } else {
+    txs = [];
+    document.body.classList.remove('logged-in');
+    document.body.classList.add('not-logged-in');
+  }
+}
 
 // ═══════════════ HELPERS ═══════════════
 const fmt=n=>'$'+Math.abs(Math.round(n)).toLocaleString('es-CL');
@@ -775,11 +1058,14 @@ auth.onAuthStateChanged(user => {
   }
 
   if (user) {
-    currentUser = user;
-    document.body.classList.remove('not-logged-in');
+    isDemoMode = false;
+    document.body.classList.remove('demo-mode', 'not-logged-in');
     document.body.classList.add('logged-in');
+    currentUser = user;
 
     updateUserUI(user);
+    const mToggle = document.getElementById('math-src-toggle');
+    if (mToggle) mToggle.style.display = 'inline-flex';
 
     // Isolate user data to their own doc: users/{uid}
     userRef = db.collection('users').doc(user.uid);
@@ -788,6 +1074,7 @@ auth.onAuthStateChanged(user => {
     loadUserData();
     gotoView('home');
   } else {
+    if (isDemoMode) return;
     if (userUnsub) { userUnsub(); userUnsub = null; }
     if (txsUnsub) { txsUnsub(); txsUnsub = null; }
     currentUser = null;
@@ -820,6 +1107,7 @@ async function loginWithGoogle(){
 }
 
 async function logout(){
+  if (isDemoMode) { exitDemoMode(); return; }
   if (!confirm('¿Deseas cerrar tu sesión?')) return;
   if (userUnsub) { userUnsub(); userUnsub = null; }
   if (txsUnsub) { txsUnsub(); txsUnsub = null; }
@@ -918,6 +1206,7 @@ function loadUserData(){
     });
     renderHome();
     if(curView==='analytics') renderAnalytics();
+    if(curView==='math') renderMathModel();
   }, err => {
     console.error("Firestore transactions error:", err);
     showToast('Error sincronizando transacciones con la base de datos', 'error');
@@ -963,6 +1252,7 @@ function gotoView(v){
   curView=v;
   if(v==='home') renderHome();
   if(v==='analytics') renderAnalytics();
+  if(v==='math') renderMathModel();
   if(v==='settings') renderSettings();
 }
 
@@ -1259,7 +1549,7 @@ function saveTx(){
   const amount=parseFloat(ms.amt);
   if(!amount||amount<=0){ showToast('Ingresa un monto válido', 'error'); return; }
   if(!ms.catId){ showToast('Selecciona una categoría', 'error'); return; }
-  if(!txsRef){ showToast('Error: no hay sesión activa', 'error'); return; }
+  if(!txsRef && !isDemoMode){ showToast('Error: no hay sesión activa', 'error'); return; }
 
   const dateVal = document.getElementById('modal-date')?.value;
   let txDate;
@@ -1281,6 +1571,21 @@ function saveTx(){
   };
   const note = document.getElementById('modal-note').value.trim();
   if (note) payload.note = note;
+
+  if (isDemoMode) {
+    if (ms.editId) {
+      txs = txs.map(x => x.id === ms.editId ? { id: ms.editId, ...payload } : x);
+      showToast('Simulación: movimiento actualizado', 'success');
+    } else {
+      txs.unshift({ id: 'dm' + Date.now(), ...payload });
+      showToast('Simulación: movimiento registrado en modelo', 'success');
+    }
+    closeModal();
+    renderHome();
+    if (curView === 'analytics') renderAnalytics();
+    if (curView === 'math') renderMathModel();
+    return;
+  }
 
   const btn = document.getElementById('save-btn');
   btn.disabled = true;
@@ -1305,9 +1610,326 @@ function editTx(id){
 
 function delTx(id){
   if(!confirm('¿Eliminar esta transacción?')) return;
+  if (isDemoMode) {
+    txs = txs.filter(x => x.id !== id);
+    renderHome();
+    if (curView === 'analytics') renderAnalytics();
+    if (curView === 'math') renderMathModel();
+    showToast('Simulación: transacción eliminada', 'info');
+    return;
+  }
   txsRef.doc(id).delete()
     .then(() => showToast('Transacción eliminada', 'info'))
     .catch(err => { console.error(err); showToast('Error al eliminar', 'error'); });
+}
+
+// ═══════════════ MODELO MATEMÁTICO (ETAPA 2 ABPro) ═══════════════
+function setMathSource(src){
+  mathSource = src;
+  const bLive = document.getElementById('msrc-live');
+  const bCase = document.getElementById('msrc-case');
+  if (bLive) bLive.classList.toggle('active', src === 'live');
+  if (bCase) bCase.classList.toggle('active', src === 'case');
+  renderMathModel();
+}
+
+function setMatMode(m){
+  matMode = m;
+  document.querySelectorAll('#m-mat-tabs .m-mat-tab').forEach(b => b.classList.toggle('active', b.dataset.m === m));
+  renderMathMatrix();
+}
+
+function updateBudgetCell(key, wkIdx, val){
+  const v = Math.max(0, Math.round(parseFloat(val) || 0));
+  if (!customBudgets[key]) customBudgets[key] = [20000, 20000, 20000, 20000];
+  customBudgets[key][wkIdx] = v;
+  renderMathMatrix();
+}
+
+function computeMathDataset(){
+  const useCase = isDemoMode || mathSource === 'case';
+  const raw = useCase ? (isDemoMode ? txs : buildDemoTransactions()) : txs;
+  const recent = filterP(raw, 'month');
+  const active = recent.length ? recent : raw;
+  const nowMs = Date.now();
+
+  const incomeTotal = getTot(active, 'income');
+  const expenses = active.filter(t => t.type === 'expense');
+
+  let rowsDef;
+  if (useCase) {
+    rowsDef = [
+      { key: 'food', label: '🍔 1. Alimentación', match: id => id === 'food', defBud: [30000,30000,30000,30000] },
+      { key: 'transport', label: '🚌 2. Transporte', match: id => id === 'transport', defBud: [15000,15000,15000,15000] },
+      { key: 'services_edu', label: '💡 3. Servicios y Estudio', match: id => id === 'services' || id === 'education', defBud: [16000,16000,16000,16000] },
+      { key: 'other_exp', label: '🎬 4. Entretención / Otros', match: id => id !== 'food' && id !== 'transport' && id !== 'services' && id !== 'education', defBud: [10000,10000,10000,10000] }
+    ];
+  } else {
+    const byCat = {};
+    expenses.forEach(t => { byCat[t.catId] = (byCat[t.catId] || 0) + t.amount; });
+    const topIds = Object.entries(byCat).sort((a,b) => b[1] - a[1]).slice(0, 5).map(e => e[0]);
+    if (!topIds.length) topIds.push('food', 'transport', 'services', 'entertainment');
+    rowsDef = topIds.map((cid, idx) => {
+      const c = getCat(cid);
+      return {
+        key: 'cat_' + cid,
+        label: `${c.emoji} ${idx + 1}. ${c.name}`,
+        match: id => id === cid,
+        defBud: [25000, 25000, 25000, 25000]
+      };
+    });
+  }
+
+  const M = rowsDef.map(() => [0, 0, 0, 0]);
+  expenses.forEach(t => {
+    const ageDays = Math.max(0, (nowMs - new Date(t.date).getTime()) / 86400000);
+    const wIdx = ageDays > 21 ? 0 : ageDays > 14 ? 1 : ageDays > 7 ? 2 : 3;
+    const rIdx = rowsDef.findIndex(r => r.match(t.catId));
+    if (rIdx >= 0) M[rIdx][wIdx] += t.amount;
+  });
+
+  const P = rowsDef.map(r => {
+    if (!customBudgets[r.key]) customBudgets[r.key] = [...r.defBud];
+    return customBudgets[r.key];
+  });
+
+  return { incomeTotal, M, P, rowsDef, daysElapsed: 30 };
+}
+
+function renderMathMatrix(){
+  const head = document.getElementById('m-mat-head');
+  const body = document.getElementById('m-mat-body');
+  const foot = document.getElementById('m-mat-foot');
+  const fBox = document.getElementById('m-mat-formula');
+  if (!head || !body || !foot) return;
+
+  const { M, P, rowsDef } = computeMathDataset();
+  const rowTotalsM = M.map(r => r.reduce((a, b) => a + b, 0));
+  const grandM = rowTotalsM.reduce((a, b) => a + b, 0);
+  const rowTotalsP = P.map(r => r.reduce((a, b) => a + b, 0));
+  const grandP = rowTotalsP.reduce((a, b) => a + b, 0);
+
+  if (fBox) {
+    if (matMode === 'real') {
+      fBox.innerHTML = `<span>g = M · u  |  u = [1, 1, 1, 1]ᵀ  ⇒  ∑G = ${fmt(grandM)}</span><span class="f-sub">Peso porcentual pᵢ = (gᵢ / ∑G) · 100%</span>`;
+    } else if (matMode === 'budget') {
+      fBox.innerHTML = `<span>Matriz Presupuesto Meta P  ⇒  ∑P = ${fmt(grandP)}</span><span class="f-sub">Edita cualquier celda semanal para recalcular D = P − M</span>`;
+    } else {
+      const netD = grandP - grandM;
+      const signNet = netD >= 0 ? '+' : '−';
+      fBox.innerHTML = `<span>D = P − M  ⇒  Balance Presupuestario: ${signNet}${fmt(netD)}</span><span class="f-sub">dᵢⱼ &lt; 0 alerta sobregiro semanal en categoría i</span>`;
+    }
+  }
+
+  const lastColHdr = matMode === 'real' ? 'Vector g = M·u' : matMode === 'budget' ? 'Meta P·u' : 'Desv. Total';
+  const extraColHdr = matMode === 'real' ? '<th>Peso pᵢ</th>' : matMode === 'dev' ? '<th>Estado</th>' : '';
+  head.innerHTML = `<tr><th>Categoría</th><th>Sem. 1</th><th>Sem. 2</th><th>Sem. 3</th><th>Sem. 4</th><th>${lastColHdr}</th>${extraColHdr}</tr>`;
+
+  const colSums = [0, 0, 0, 0];
+  body.innerHTML = rowsDef.map((r, i) => {
+    let cells = '';
+    for (let j = 0; j < 4; j++) {
+      if (matMode === 'real') {
+        const v = M[i][j];
+        colSums[j] += v;
+        cells += `<td>${fmt(v)}</td>`;
+      } else if (matMode === 'budget') {
+        const v = P[i][j];
+        colSums[j] += v;
+        cells += `<td><input type="number" class="m-bud-inp" step="1000" min="0" value="${Math.round(v)}" onchange="updateBudgetCell('${r.key}',${j},this.value)"></td>`;
+      } else {
+        const d = P[i][j] - M[i][j];
+        colSums[j] += d;
+        const cls = d < 0 ? 'm-cell-neg' : 'm-cell-pos';
+        const pfx = d < 0 ? '−' : '+';
+        cells += `<td class="${cls}">${pfx}${fmt(d)}</td>`;
+      }
+    }
+
+    if (matMode === 'real') {
+      const g_i = rowTotalsM[i];
+      const pct = grandM > 0 ? ((g_i / grandM) * 100).toFixed(1).replace('.', ',') + '%' : '0,0%';
+      return `<tr><th scope="row">${escapeHtml(r.label)}</th>${cells}<td style="font-weight:800">${fmt(g_i)}</td><td style="color:var(--text-s);font-weight:700">${pct}</td></tr>`;
+    } else if (matMode === 'budget') {
+      return `<tr><th scope="row">${escapeHtml(r.label)}</th>${cells}<td style="font-weight:800">${fmt(rowTotalsP[i])}</td></tr>`;
+    } else {
+      const dTot = rowTotalsP[i] - rowTotalsM[i];
+      const cls = dTot < 0 ? 'm-cell-neg' : 'm-cell-pos';
+      const pfx = dTot < 0 ? '−' : '+';
+      const badge = dTot < 0 ? '<span style="color:#FB7185;font-weight:800">⚠️ Sobregiro</span>' : '<span style="color:#34D399;font-weight:800">✓ En meta</span>';
+      return `<tr><th scope="row">${escapeHtml(r.label)}</th>${cells}<td class="${cls}">${pfx}${fmt(dTot)}</td><td>${badge}</td></tr>`;
+    }
+  }).join('');
+
+  const grandActive = colSums.reduce((a, b) => a + b, 0);
+  const fmtSigned = v => (matMode === 'dev' ? (v < 0 ? '−' : '+') + fmt(v) : fmt(v));
+  const footExtra = matMode === 'real' ? '<td>100,0%</td>' : matMode === 'dev' ? `<td>${grandActive < 0 ? '⚠️ Ajustar' : '✓ Óptimo'}</td>` : '';
+  foot.innerHTML = `<tr><th scope="row">Total semanal (1ᵀ·${matMode==='real'?'M':matMode==='budget'?'P':'D'})</th>${colSums.map(v => `<td>${fmtSigned(v)}</td>`).join('')}<td>${fmtSigned(grandActive)}</td>${footExtra}</tr>`;
+}
+
+function renderMathLinear(){
+  const svg = document.getElementById('m-lin-svg');
+  const kpis = document.getElementById('m-lin-kpis');
+  const fBox = document.getElementById('m-lin-formula');
+  if (!svg || !kpis) return;
+
+  const { incomeTotal, M, daysElapsed } = computeMathDataset();
+  const totalExp = M.flat().reduce((a, b) => a + b, 0);
+  const I0 = incomeTotal > 0 ? incomeTotal : 360000;
+  const gBar = totalExp > 0 ? totalExp / daysElapsed : 0;
+  const f30 = I0 - gBar * 30;
+  const tRoot = gBar > 0 ? (I0 / gBar) : Infinity;
+
+  if (fBox) {
+    fBox.innerHTML = `<span>f(t) = ${Math.round(I0).toLocaleString('es-CL')} − ${Math.round(gBar).toLocaleString('es-CL')}·t</span><span class="f-sub">ḡ = ${fmt(totalExp)} / ${daysElapsed}d = ${fmt(gBar)}/día</span>`;
+  }
+
+  kpis.innerHTML = `
+    <div class="m-kpi"><div class="m-kpi-lbl">Intercepto I₀</div><div class="m-kpi-val" style="color:var(--income)">${fmt(I0)}</div><div class="m-kpi-sub">f(0) ingreso inicial</div></div>
+    <div class="m-kpi"><div class="m-kpi-lbl">Pendiente −ḡ</div><div class="m-kpi-val" style="color:var(--expense)">−${fmt(gBar)}</div><div class="m-kpi-sub">Gasto medio diario</div></div>
+    <div class="m-kpi"><div class="m-kpi-lbl">Cierre mes f(30)</div><div class="m-kpi-val" style="color:${f30>=0?'var(--income)':'var(--expense)'}">${f30<0?'−':''}${fmt(f30)}</div><div class="m-kpi-sub">Saldo al día 30</div></div>
+    <div class="m-kpi"><div class="m-kpi-lbl">Raíz f(t) = 0</div><div class="m-kpi-val" style="color:var(--primary)">${isFinite(tRoot)?tRoot.toFixed(1).replace('.',',')+' d':'∞'}</div><div class="m-kpi-sub">Autonomía máxima</div></div>
+  `;
+
+  const W = Math.max(280, (svg.parentElement?.clientWidth || 360) - 12);
+  const H = 225, PL = 58, PR = 20, PT = 22, PB = 34;
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  const maxT = Math.max(35, Math.min(60, isFinite(tRoot) ? Math.ceil(tRoot / 5) * 5 + 3 : 40));
+  const maxY = Math.max(I0 * 1.08, 10000);
+  const minY = Math.min(0, f30 * 1.15);
+  const rangeY = maxY - minY || 1;
+  const iW = W - PL - PR, iH = H - PT - PB;
+  const toX = t => PL + (t / maxT) * iW;
+  const toY = v => PT + iH - ((v - minY) / rangeY) * iH;
+
+  let grid = '';
+  for (let k = 0; k <= 4; k++) {
+    const val = minY + (rangeY / 4) * k;
+    const y = toY(val);
+    const lbl = Math.abs(val) >= 1000 ? `${val < 0 ? '−' : ''}$${Math.round(Math.abs(val) / 1000)}k` : `$${Math.round(val)}`;
+    grid += `<line x1="${PL}" y1="${y.toFixed(1)}" x2="${W - PR}" y2="${y.toFixed(1)}" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+      <text x="${PL - 7}" y="${(y + 4).toFixed(1)}" text-anchor="end" fill="rgba(255,255,255,0.38)" font-size="10.5" font-family="Inter">${lbl}</text>`;
+  }
+  for (let t = 0; t <= maxT; t += 10) {
+    const x = toX(t);
+    grid += `<text x="${x.toFixed(1)}" y="${H - 8}" text-anchor="middle" fill="rgba(255,255,255,0.38)" font-size="10.5" font-family="Inter">Día ${t}</text>`;
+  }
+
+  const yZero = toY(0);
+  const endT = isFinite(tRoot) && tRoot <= maxT ? tRoot : maxT;
+  const endV = I0 - gBar * endT;
+  const x0 = toX(0), y0 = toY(I0);
+  const x30 = toX(Math.min(30, maxT)), y30 = toY(f30);
+  const xE = toX(endT), yE = toY(endV);
+
+  const area = `M ${x0.toFixed(1)} ${y0.toFixed(1)} L ${xE.toFixed(1)} ${yE.toFixed(1)} L ${xE.toFixed(1)} ${yZero.toFixed(1)} L ${x0.toFixed(1)} ${yZero.toFixed(1)} Z`;
+  const rootMarker = (isFinite(tRoot) && tRoot <= maxT)
+    ? `<circle cx="${toX(tRoot).toFixed(1)}" cy="${yZero.toFixed(1)}" r="5" fill="#F43F5E" stroke="#0B121C" stroke-width="2"/>
+       <text x="${Math.min(W - PR - 4, toX(tRoot)).toFixed(1)}" y="${(yZero - 9).toFixed(1)}" text-anchor="end" fill="#FB7185" font-size="10.5" font-weight="700" font-family="Inter">Raíz (${tRoot.toFixed(1).replace('.',',')}d)</text>`
+    : '';
+
+  svg.innerHTML = `
+    <defs>
+      <linearGradient id="linGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#10B981" stop-opacity="0.32"/>
+        <stop offset="100%" stop-color="#10B981" stop-opacity="0.02"/>
+      </linearGradient>
+    </defs>
+    ${grid}
+    <line x1="${PL}" y1="${yZero.toFixed(1)}" x2="${W - PR}" y2="${yZero.toFixed(1)}" stroke="rgba(255,255,255,0.28)" stroke-width="1.4"/>
+    <path d="${area}" fill="url(#linGrad)"/>
+    <line x1="${x0.toFixed(1)}" y1="${y0.toFixed(1)}" x2="${xE.toFixed(1)}" y2="${yE.toFixed(1)}" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+    <line x1="${x30.toFixed(1)}" y1="${y30.toFixed(1)}" x2="${x30.toFixed(1)}" y2="${yZero.toFixed(1)}" stroke="#6366F1" stroke-width="1.3" stroke-dasharray="4 3"/>
+    <circle cx="${x0.toFixed(1)}" cy="${y0.toFixed(1)}" r="4.8" fill="#10B981" stroke="#0B121C" stroke-width="2"/>
+    <circle cx="${x30.toFixed(1)}" cy="${y30.toFixed(1)}" r="5" fill="#6366F1" stroke="#0B121C" stroke-width="2"/>
+    <text x="${(x30 - 6).toFixed(1)}" y="${Math.max(PT + 10, y30 - 9).toFixed(1)}" text-anchor="end" fill="#A5B4FC" font-size="10.5" font-weight="700" font-family="Inter">f(30) = ${fmt(f30)}</text>
+    ${rootMarker}
+  `;
+}
+
+function renderMathSeq(){
+  const svg = document.getElementById('m-seq-svg');
+  const kpis = document.getElementById('m-seq-kpis');
+  if (!svg || !kpis) return;
+
+  const C0 = Math.max(0, parseFloat(document.getElementById('sim-c0')?.value) || 0);
+  const d = Math.max(0, parseFloat(document.getElementById('sim-d')?.value) || 0);
+  const rPct = Math.max(0.01, parseFloat(document.getElementById('sim-r')?.value) || 0.8);
+  const N = Math.max(3, Math.min(60, parseInt(document.getElementById('sim-n')?.value) || 12));
+  const r = rPct / 100;
+
+  const rLbl = document.getElementById('sim-r-lbl');
+  const nLbl = document.getElementById('sim-n-lbl');
+  if (rLbl) rLbl.textContent = rPct.toFixed(1).replace('.', ',') + '%';
+  if (nLbl) nLbl.textContent = N + ' m';
+
+  const paPts = [], pgPts = [];
+  for (let n = 0; n <= N; n++) {
+    const an = C0 + n * d;
+    const cn = C0 * Math.pow(1 + r, n) + d * ((Math.pow(1 + r, n) - 1) / r);
+    paPts.push(an);
+    pgPts.push(cn);
+  }
+  const aN = paPts[N], cN = pgPts[N], diff = cN - aN;
+
+  kpis.innerHTML = `
+    <div class="m-kpi"><div class="m-kpi-lbl">PA (a<sub>${N}</sub> sin interés)</div><div class="m-kpi-val" style="color:#A5B4FC">${fmt(aN)}</div><div class="m-kpi-sub">Aporte lineal</div></div>
+    <div class="m-kpi"><div class="m-kpi-lbl">PG + Serie (C<sub>${N}</sub>)</div><div class="m-kpi-val" style="color:var(--income)">${fmt(cN)}</div><div class="m-kpi-sub">Capital compuesto</div></div>
+    <div class="m-kpi"><div class="m-kpi-lbl">Ganancia Interés</div><div class="m-kpi-val" style="color:var(--savings)">+${fmt(diff)}</div><div class="m-kpi-sub">C<sub>${N}</sub> − a<sub>${N}</sub></div></div>
+    <div class="m-kpi"><div class="m-kpi-lbl">Tasa Efectiva Anual</div><div class="m-kpi-val" style="color:var(--text)">${((Math.pow(1+r,12)-1)*100).toFixed(1).replace('.',',')}%</div><div class="m-kpi-sub">Capitalización mensual</div></div>
+  `;
+
+  const W = Math.max(280, (svg.parentElement?.clientWidth || 360) - 12);
+  const H = 225, PL = 60, PR = 18, PT = 20, PB = 34;
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  const maxV = Math.max(cN * 1.08, 10000);
+  const iW = W - PL - PR, iH = H - PT - PB;
+  const toX = n => PL + (n / N) * iW;
+  const toY = v => PT + iH - (v / maxV) * iH;
+
+  let grid = '';
+  for (let k = 0; k <= 4; k++) {
+    const val = (maxV / 4) * k;
+    const y = toY(val);
+    const lbl = val >= 1e6 ? `$${(val / 1e6).toFixed(2)}M` : val >= 1000 ? `$${Math.round(val / 1000)}k` : `$${Math.round(val)}`;
+    grid += `<line x1="${PL}" y1="${y.toFixed(1)}" x2="${W - PR}" y2="${y.toFixed(1)}" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+      <text x="${PL - 7}" y="${(y + 4).toFixed(1)}" text-anchor="end" fill="rgba(255,255,255,0.38)" font-size="10.5" font-family="Inter">${lbl}</text>`;
+  }
+  const stepX = Math.max(1, Math.round(N / 6));
+  for (let n = 0; n <= N; n += stepX) {
+    grid += `<text x="${toX(n).toFixed(1)}" y="${H - 8}" text-anchor="middle" fill="rgba(255,255,255,0.38)" font-size="10.5" font-family="Inter">m${n}</text>`;
+  }
+
+  const paPath = paPts.map((v, n) => `${n === 0 ? 'M' : 'L'} ${toX(n).toFixed(1)} ${toY(v).toFixed(1)}`).join(' ');
+  const pgPath = pgPts.map((v, n) => `${n === 0 ? 'M' : 'L'} ${toX(n).toFixed(1)} ${toY(v).toFixed(1)}`).join(' ');
+  const pgArea = `${pgPath} L ${toX(N).toFixed(1)} ${toY(0).toFixed(1)} L ${toX(0).toFixed(1)} ${toY(0).toFixed(1)} Z`;
+
+  svg.innerHTML = `
+    <defs>
+      <linearGradient id="seqGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#10B981" stop-opacity="0.28"/>
+        <stop offset="100%" stop-color="#10B981" stop-opacity="0.01"/>
+      </linearGradient>
+    </defs>
+    ${grid}
+    <path d="${pgArea}" fill="url(#seqGrad)"/>
+    <path d="${paPath}" fill="none" stroke="#818CF8" stroke-width="2.3" stroke-dasharray="5 4"/>
+    <path d="${pgPath}" fill="none" stroke="#10B981" stroke-width="3"/>
+    <circle cx="${toX(N).toFixed(1)}" cy="${toY(aN).toFixed(1)}" r="4.2" fill="#818CF8" stroke="#0B121C" stroke-width="1.8"/>
+    <circle cx="${toX(N).toFixed(1)}" cy="${toY(cN).toFixed(1)}" r="5" fill="#10B981" stroke="#0B121C" stroke-width="2"/>
+    <g transform="translate(${PL + 10}, ${PT + 6})">
+      <line x1="0" y1="6" x2="16" y2="6" stroke="#10B981" stroke-width="3"/>
+      <text x="22" y="10" fill="#E2E8F0" font-size="10.5" font-weight="700" font-family="Inter">PG Compuesta (${fmt(cN)})</text>
+      <line x1="0" y1="22" x2="16" y2="22" stroke="#818CF8" stroke-width="2.3" stroke-dasharray="4 3"/>
+      <text x="22" y="26" fill="#CBD5E1" font-size="10.5" font-weight="600" font-family="Inter">PA Lineal (${fmt(aN)})</text>
+    </g>
+  `;
+}
+
+function renderMathModel(){
+  renderMathMatrix();
+  renderMathLinear();
+  renderMathSeq();
 }
 
 // ═══════════════ DESKTOP KEYBOARD SHORTCUTS ═══════════════
@@ -1336,7 +1958,20 @@ window.addEventListener('keydown', e => {
 
 // ═══════════════ INIT ═══════════════
 applyTheme(theme);
-window.addEventListener('resize',()=>{ if(curView==='home') renderChart(); });
+window.addEventListener('resize',()=>{
+  if(curView==='home') renderChart();
+  if(curView==='math'){ renderMathLinear(); renderMathSeq(); }
+});
+(function checkUrlDemo(){
+  const p = new URLSearchParams(location.search).get('demo');
+  if (p) {
+    const loader = document.getElementById('auth-loader');
+    if (loader) loader.remove();
+    if (p === 'dev') { matMode = 'dev'; startDemoMode('math', true); setMatMode('dev'); }
+    else if (p === 'math') { startDemoMode('math', true); }
+    else { startDemoMode('home', true); }
+  }
+})();
 </script>
 </body>
 </html>

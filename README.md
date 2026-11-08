@@ -12,6 +12,7 @@
 ## 🌐 Enlaces de Producción
 
 - **Dominio Principal**: [https://summo-wallet.web.app](https://summo-wallet.web.app)
+- **Modo Simulación Matemática Directa**: [https://summo-wallet.web.app/?demo=math](https://summo-wallet.web.app/?demo=math)
 - **Dominio Alternativo**: [https://summo-wallet.firebaseapp.com](https://summo-wallet.firebaseapp.com)
 - **Dominio de Proyecto**: [https://wallet-personal-73c03.web.app](https://wallet-personal-73c03.web.app)
 
@@ -52,6 +53,12 @@
 - **Diseño Adaptable Mobile & Desktop**: Barra superior compacta en móviles y barra de navegación lateral (*Sidebar*) en pantallas de escritorio, con 8 temas de color personalizables.
 - **Registro Ágil**: Selector de fechas pasadas, teclado numérico táctil y atajos de teclado físico en escritorio (`0-9`, `.`, `Backspace`, `Enter`, `Esc`).
 - **Portabilidad y Seguridad Cliente**: Exportación local de respaldos en formato JSON (`summo_backup_YYYY-MM-DD.json`) y sanitización HTML contra XSS.
+
+### 6. 🧮 Motor de Modelamiento Matemático y Modo Simulación
+- **Matriz Presupuestaria Categoría × Semana ($M_{4\times 4}$)**: Clasificación semanal automática de egresos, cálculo del vector de gasto por categoría $\mathbf{g} = M \cdot \mathbf{u}$, metas editables ($P$) y detección matricial de sobregiros mediante $D = P - M$ ($d_{ij} < 0$).
+- **Proyección Lineal de Liquidez ($f(t) = I_0 - \bar{g} \cdot t$)**: Estimación en tiempo real del saldo al día 30 ($f(30)$), gasto medio diario ($\bar{g}$) y raíz de autonomía máxima ($t^* = I_0 / \bar{g}$) graficada en `<svg>`.
+- **Simulador de Sucesiones de Ahorro (PA vs. PG)**: Comparación interactiva entre Progresión Aritmética ($a_n = C_0 + n \cdot d$) y Progresión/Serie Geométrica compuesta ($C_n = C_0(1+r)^n + d \cdot \frac{(1+r)^n - 1}{r}$).
+- **Modo Simulación Académica (`?demo=math`)**: Entorno local reproducible en memoria sin afectar datos reales en Cloud Firestore.
 
 ---
 
